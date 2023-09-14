@@ -40,6 +40,5 @@ jobs:
           containerAppName: open-liberity
           resourceGroup: zhiyongli-tanzu
           imageToBuild: showpune/open-liberity:${{ github.sha }}
-          dockerfilePath: Dockerfile
 
 
