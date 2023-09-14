@@ -7,7 +7,7 @@ on:
     branches: 
       [ main ]
     paths:
-    - '//**'
+    - 'src/**'
     - '.github/workflows/open-liberity-AutoDeployTrigger-fe296892-b8ea-4ff0-9732-87b7c18216da.yml'
 
   # Allow manual trigger 
