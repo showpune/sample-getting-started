@@ -31,7 +31,7 @@ jobs:
           subscription-id: ${{ secrets.OPENLIBERITY_AZURE_SUBSCRIPTION_ID }}
 
       - name: Azure Container Apps Build and Deploy for Java            
-        uses: showpune/container-apps-deploy-action@v0.0.2
+        uses: showpune/container-apps-deploy-action@v0.0.3
         with:
           appSourcePath: ${{ github.workspace }} 
           registryUrl: docker.io
