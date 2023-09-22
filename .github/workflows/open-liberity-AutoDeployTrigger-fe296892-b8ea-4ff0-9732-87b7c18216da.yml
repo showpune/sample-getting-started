@@ -40,6 +40,6 @@ jobs:
           containerAppName: open-liberity
           resourceGroup: zhiyongli-tanzu
           imageToBuild: showpune/open-liberity:${{ github.sha }}
-          volumeMount:  ' --volume ${{ github.workspace }}/config:/bindings:ro '
+          volumeMount:  ' --volume ${{ github.workspace }}/config/applicationinsight:/platform/bindings/application-insights:ro '
 
 
