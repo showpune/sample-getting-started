@@ -31,7 +31,7 @@ jobs:
           subscription-id: ${{ secrets.OPENLIBERITY_AZURE_SUBSCRIPTION_ID }}
 
       - name: Azure Container Apps Build and Deploy for Java            
-        uses: showpune/container-apps-deploy-action@v0.0.5
+        uses: showpune/container-apps-deploy-action@v0.0.7
         with:
           appSourcePath: ${{ github.workspace }} 
           registryUrl: docker.io
@@ -40,5 +40,6 @@ jobs:
           containerAppName: open-liberity
           resourceGroup: zhiyongli-tanzu
           imageToBuild: showpune/open-liberity:${{ github.sha }}
+          volumeMount:  ' --volume ${{ github.workspace }}/config:/bindings:ro '
 
 
